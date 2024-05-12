@@ -1,26 +1,21 @@
-def calculator():
-    print("Welcome to Simple Calculator!")
-    num1 = float(input("Enter the first number: "))
-    operator = input("Enter the operator (+, -, *, /): ")
-    num2 = float(input("Enter the second number: "))
+print('--- Welcome to my calculator ---')
 
-    if operator == "+":
-        result = num1 + num2
-    elif operator == "-":
-        result = num1 - num2
-    elif operator == "*":
-        result = num1 * num2
-    elif operator == "/":
-        if num2 == 0:
-            print("Error: Division by zero is not allowed.")
-            return
-        else:
-            result = num1 / num2
+n1 = float(input('Please input first integer: '))
+op = input('Operator +,-,*,/ : ')
+n2 = float(input('then type operational integer: '))
+
+if op == '+':
+    print(n1 + n2)
+elif op == '-':
+    print(n1 - n2)
+elif op == '*':
+    print(n1*n2)
+elif op == '/':
+    if n2 == 0:
+        print('Cannot be devided by zero!!')
     else:
-        print("Invalid operator!")
-        return
+        print(n1/n2)
+else:
+    print('Math error!')
 
-    print("Result: ", result)
-
-# Run the calculator function
-calculator()
+print('--- This is my calculator ---')
